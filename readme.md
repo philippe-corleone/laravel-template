@@ -18,7 +18,7 @@ All these packages which are used to realize this project stand under the MIT li
 `ionic-team/ionicons`: https://github.com/ionic-team/ionicons  
 
 
-## Installation
+## Installation of the Application
 
 1. Clone this repository with:
 ```
@@ -28,23 +28,27 @@ git clone https://github.com/philippe-corleone/laravel-template.git
 ```
 composer update
 ```
-3. Costumize the `.env` in the root directory and set you database, user and password. Default it is MySQL in use.
-4. Migrate all tables and run: 
+3. Costumize the `.env` in the root directory and set your database, the database user and the database password. Default it is MySQL in use. You should also set the app name.
+4. Generate an app key with the command: `php artisan key:generate`
+5. Migrate all tables and run: 
 ```
 php artisan migrate
 ```
-5. Run all database seeds:
+6. Run all database seeds:
 ```
 php artisan db:seed
 ```
-6. Install all npm dependencies (this includes elexier):
+The application is now running and can be used! You can log in with the email `admin@secret.com` and the password `secret`.
+
+## Installation of the developer tools
+This Laravel template uses Elixir (https://laravel.com/docs/5.3/elixir) and gulp to generate css and javascript files. An `Gulpfile.js` already exists in the project and is in use. To use exlixir and gulp follow the following steps:
+
+1. Install all npm dependencies (this includes elexier):
 ```
 npm install
 ```
-7. Install gulp:
+2. Install gulp:
 ```
 npm install gulp
 ```
-8. check out gulp and run `gulp`.
-9. Now you login with the email `admin@secret.com` and the password `secret`. This user has all rights.
-10. Ready, enjoy!
+3. check out gulp and run `gulp`.
