@@ -26,7 +26,7 @@ git clone https://github.com/philippe-corleone/laravel-template.git
 ```
 2. Install all packages and run:
 ```
-composer update
+composer install
 ```
 3. Costumize the `.env` in the root directory and set your database, the database user and the database password. Default it is MySQL in use. You should also set the app name.
 4. Generate an app key with the command: `php artisan key:generate`
